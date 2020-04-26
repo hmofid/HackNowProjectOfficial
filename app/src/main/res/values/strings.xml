@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">HackNowProjectOfficial</string>
+    <string name="tell_me_a_joke">Tell me a Joke!</string>
+    <string name="calm_me_down">Calm Me Down</string>
 </resources>

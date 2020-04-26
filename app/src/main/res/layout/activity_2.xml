@@ -4,15 +4,129 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/bearpic">
 
-    <TextView
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/youtubePlayerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+   <!-- <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:text="Here are some things that might help!"
+        android:textSize="22sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/calmText1"
+        android:layout_width="334dp"
+        android:layout_height="47dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="46dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="53dp"
+        android:text="First, take a few deep breaths."
+        android:textSize="19sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/calmText2"
+        android:layout_width="335dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:text="Have you had enough water today?"
+        android:textSize="19sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/calmText3"
+        android:layout_width="361dp"
+        android:layout_height="57dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:text="Make sure you are not feeling anxious because you are hungry"
+        android:textSize="19sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/calmText4"
+        android:layout_width="320dp"
+        android:layout_height="57dp"
+        android:layout_alignStart="@+id/calmText1"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-16dp"
+        android:layout_marginTop="210dp"
+        android:text="Ask yourself what's bothering you."
+        android:textSize="19sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/calmText5"
+        android:layout_width="352dp"
+        android:layout_height="81dp"
+        android:layout_below="@+id/calmText4"
+        android:layout_alignParentStart="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="17dp"
-        android:text="Quarantine Mood Booster"
-        android:textSize="28sp" />
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="-5dp"
+        android:text="Perhaps you need to organize all the things or tasks you need to do in order to not feel anxious or overwhelmed."
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/calmText6"
+        android:layout_width="366dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calmText5"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="9dp"
+        android:text="Have you talked to a friend? Call 'em up and chat!"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="161dp" />
+        -->
+
+    <Button
+        android:id="@+id/playbutton"
+        android:layout_width="377dp"
+        android:layout_height="64dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="534dp"
+        android:layout_marginEnd="195dp"
+        android:layout_marginRight="195dp"
+        android:onClick="videoPlay"
+        android:text="Play"
+        android:textSize="30sp" />
+
 </RelativeLayout>

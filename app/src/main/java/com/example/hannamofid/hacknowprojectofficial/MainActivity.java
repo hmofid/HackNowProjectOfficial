@@ -5,14 +5,20 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import java.util.Random;
 
 
 public class MainActivity extends AppCompatActivity {
 
-    android.widget.Button feelingsButton;
+    android.widget.Button affirmationsButton;
     android.widget.Button jokeButton;
-   android.widget.Button songButton;
+   android.widget.Button calmButton;
    android.widget.RelativeLayout background;
+
+
 
 
     @Override
@@ -20,9 +26,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        feelingsButton = (android.widget.Button) findViewById(R.id.button1);
+        affirmationsButton = (android.widget.Button) findViewById(R.id.button7);
         jokeButton = (android.widget.Button) findViewById(R.id.button2);
-        songButton = (android.widget.Button) findViewById(R.id.button3);
+        calmButton = (android.widget.Button) findViewById(R.id.button1);
+
+
 
         setUpListeners();
     }
@@ -49,6 +57,23 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
+        public void openActivity3(){
+
+        Intent intent = new Intent(this, Activity3.class);
+        startActivity(intent);
+
+
+
+        }
+
+    public void openActivity4(){
+
+        Intent intent = new Intent(this, Activity4.class);
+        startActivity(intent);
+
+    }
+
+
 
 
 
@@ -58,13 +83,12 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     //where action happens!!!
-                    changeColors();
-
-
+                    openActivity3();
+                    //changeColors();
                 }
             });
 
-            feelingsButton.setOnClickListener(new View.OnClickListener() {
+            calmButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     //where action happens!!!
@@ -74,7 +98,13 @@ public class MainActivity extends AppCompatActivity {
             });
 
 
-
+            affirmationsButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    //where action happens!!!
+                    openActivity4();
+                }
+            });
 
 
 
